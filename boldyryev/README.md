@@ -1,1 +1,1 @@
-# Boldyryev Mykyta <m.boldyryev@reply.de>
+# Boldyryev Mykyta
