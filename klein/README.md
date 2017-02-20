@@ -1,1 +1,1 @@
-# Klein Thomas <t.klein@reply.de>
+# Klein Thomas

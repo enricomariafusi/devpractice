@@ -1,1 +1,1 @@
-# Teixeira Tiago <t.teixeira@reply.de>
+# Teixeira Tiago

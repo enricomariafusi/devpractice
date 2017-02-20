@@ -1,1 +1,1 @@
-# Steingass Andreas <a.steingass@reply.de>
+# Steingass Andreas
