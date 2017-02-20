@@ -1,1 +1,1 @@
-# Bargach Mohamed <m.bargach@reply.de>
+# Bargach Mohamed
