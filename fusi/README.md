@@ -6,8 +6,8 @@ written in go.
 
 First: Generate RSA signing files via shell (adjust as needed):
 
-$ openssl genrsa -out app.rsa 1024
-$ openssl rsa -in app.rsa -pubout > app.rsa.pub
+- $ openssl genrsa -out app.rsa 1024
+- $ openssl rsa -in app.rsa -pubout > app.rsa.pub
 
 
 NEXT STEP: to start it using docker.
