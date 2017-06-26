@@ -4,3 +4,5 @@ contains some code doing JWT authentication on HTTP (JSON token according with h
 
 written in go.
 
+NEXT STEP: to start it using docker.
+
