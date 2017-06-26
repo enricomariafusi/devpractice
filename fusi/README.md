@@ -70,13 +70,15 @@ write:
 docker build --tag=mizzega-jwt .
 </pre>
 
-Now you created the image
+Now you created the image yu can list it
 
 <pre>
 docker images
 </pre>
 
+And you can run it
+
 <pre>
-docker run mizzega-jwt
+docker run -p portIlike:8080 mizzega-jwt
 </pre>
 
