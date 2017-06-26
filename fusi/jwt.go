@@ -110,7 +110,7 @@ func LoginHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if strings.ToLower(user.Username) != "someone" {
-		if user.Password != "p@ssword" {
+		if user.Password != "mizzega" {
 			w.WriteHeader(http.StatusForbidden)
 			fmt.Println("Error logging in")
 			fmt.Fprint(w, "Invalid credentials")
