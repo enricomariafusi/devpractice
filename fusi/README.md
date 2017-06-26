@@ -42,5 +42,5 @@ To use it, please Generate RSA signing files via shell (adjust as needed):
 and put in the same folder the executable runs.
 
 
-NEXT STEP: to start it using docker.
+NEXT STEP: to start it using docker using the "generic" driver.
 
