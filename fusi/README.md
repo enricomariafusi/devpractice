@@ -67,12 +67,16 @@ EXPOSE 8080
 write:
 
 <pre>
-docker build --tag=me/my-image .
+docker build --tag=mizzega-jwt .
 </pre>
 
 Now you created the image
 
 <pre>
-docker run me/my-image 
+docker images
+</pre>
+
+<pre>
+docker run mizzega-jwt
 </pre>
 
