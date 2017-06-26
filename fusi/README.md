@@ -44,3 +44,31 @@ and put in the same folder the executable runs.
 
 NEXT STEP: to start it using docker using the "generic" driver.
 
+Install docker in your computer. I assume the docker main service is up and running.
+
+Create a folder like "myimage" into the folder you keep your images.
+
+cd ~/somewhere/myimage
+
+touch Dockerfile
+
+copy the executable you created from the source, like: cp mizzega-jwt ~/somewhere/myimage
+
+edit dockerfile:
+
+<pre>
+FROM myserver
+MAINTAINER your@email
+COPY mizzega-jwt /bin/
+CMD ["/bin/mizzega-jwt"]
+</pre>
+
+write:
+
+docker build --tag=me/my-image .
+
+Now you created the image
+
+docker run me/my-image 
+
+
