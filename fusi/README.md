@@ -11,8 +11,9 @@ When you do a post on localhost:8080/login , like:
 </pre>
 it will return something like:
 
+<pre>
 {"token":"averylong.token.here"}
-
+</pre>
 Is written in go.
 
 To use it, please Generate RSA signing files via shell (adjust as needed):
