@@ -12,14 +12,15 @@ import (
 	"time"
 
 	"crypto/rsa"
+	
+	// I do not need to reinvent the wheel
 	"github.com/codegangsta/negroni"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/dgrijalva/jwt-go/request"
 )
 
 const (
-	// For simplicity these files are in the same folder as the app binary.
-	// You shouldn't do this in production.
+	
 	privKeyPath = "app.rsa"
 	pubKeyPath  = "app.rsa.pub"
 )
@@ -75,6 +76,7 @@ func StartServer() {
 	http.HandleFunc("/login", LoginHandler)
 
 	// Protected Endpoints
+	// here we may enter or not...
 	http.Handle("/resource", negroni.New(
 		negroni.HandlerFunc(ValidateTokenMiddleware),
 		negroni.Wrap(http.HandlerFunc(ProtectedHandler)),
