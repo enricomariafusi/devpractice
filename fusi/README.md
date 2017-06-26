@@ -61,6 +61,7 @@ FROM myserver
 MAINTAINER your@email
 COPY mizzega-jwt /bin/
 CMD ["/bin/mizzega-jwt"]
+EXPOSE 8080
 </pre>
 
 write:
