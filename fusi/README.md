@@ -2,7 +2,7 @@ JWT.go:
 
 contains some code doing JWT authentication on HTTP (JSON token according with https://tools.ietf.org/html/rfc7519 )
 
-It runs on localhost:8080 
+It runs on port 8080, you can check on localhost when you don't use docker. 
 When you do a post on http://localhost:8080/login , like:
 
 <pre> {"username": "admin",
