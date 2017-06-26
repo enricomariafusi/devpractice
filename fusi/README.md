@@ -5,10 +5,10 @@ contains some code doing JWT authentication on HTTP (JSON token according with h
 It runs on localhost:8080 
 When you do a post on localhost:8080/login , like:
 
-{"username": "admin",
+<pre> {"username": "admin",
 "password": "mizzega"
 }
-
+</pre>
 it will return something like:
 
 {"token":"averylong.token.here"}
