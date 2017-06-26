@@ -15,7 +15,11 @@ it will return something like:
 {"token":"averylong.token.here"}
 </pre>
 
-From this moment on, putting the token and doing requestes to 
+From this moment on, if you do a request here, with an extraheader like:
+
+<pre>
+Authorization: Bearer averylong.token.here
+</pre>
 
 http://localhost:8080/resource
 
