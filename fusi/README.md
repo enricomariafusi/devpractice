@@ -66,10 +66,13 @@ EXPOSE 8080
 
 write:
 
+<pre>
 docker build --tag=me/my-image .
+</pre>
 
 Now you created the image
 
+<pre>
 docker run me/my-image 
-
+</pre>
 
