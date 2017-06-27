@@ -59,8 +59,11 @@ edit dockerfile:
 <pre>
 FROM myserver
 MAINTAINER your@email
-COPY mizzega-jwt /bin/
-CMD ["/bin/mizzega-jwt"]
+CMD ["mkdir","-p","/opt/bin"]
+COPY mizzega-jwt /opt/bin/
+COPY app.rsa /opt/bin/
+COPY app.rsa.pub /opt/bin/
+CMD ["/opt/bin/mizzega-jwt"]
 EXPOSE 8080
 </pre>
 
