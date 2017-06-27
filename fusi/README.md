@@ -57,12 +57,10 @@ copy the executable you created from the source, like: cp mizzega-jwt ~/somewher
 edit dockerfile:
 
 <pre>
-FROM myserver
+FROM boot2docker
 MAINTAINER your@email
-CMD ["mkdir","-p","/opt/bin"]
-COPY mizzega-jwt /opt/bin/
-COPY app.rsa /opt/bin/
-COPY app.rsa.pub /opt/bin/
+RUN mkdir -p /opt/bin
+ADD . /opt/bin/
 CMD ["/opt/bin/mizzega-jwt"]
 EXPOSE 8080
 </pre>
